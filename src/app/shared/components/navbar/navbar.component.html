@@ -3,9 +3,12 @@
        <img class="w-25 object-cover cursor-pointer" src='assets/images/logos/amazon_logo.png' alt="brand-logo">
        <div class="flex gap-2 w-[50%] h-10 outline rounded  bg-white">
            <label for="search"></label>
-           <input type="text" class="w-full outline-none px-2 placeholder:opacity-60" id="search" placeholder="Search a product">
-           <button class="bg-[#f3a847] w-[60px] rounded-r py-2 cursor-pointer"><mat-icon>search</mat-icon></button>
+           <form (ngSubmit)="onSubmit($event)" class="flex items-center w-full h-full">
+            <input [(ngModel)]="searchInput" name="search" type="text" class="bg-none w-full outline-none px-2 placeholder:opacity-60" id="search" placeholder="Search a product">
+            <button type="submit" class="bg-[#f3a847] w-[60px] rounded-r flex items-center justify-center h-full cursor-pointer"><mat-icon>search</mat-icon></button>
+           </form>           
        </div>
+       <!-- <button class="text-white underline">Add New Product</button> -->
    </div> 
     <nav>
         <ul class="flex items-center gap-10 text-white">
@@ -29,7 +32,7 @@
                 </span>
               </div>
             </li>
-          <li routerLink="/signin" class="cursor-pointer">
+          <li routerLink="/auth" class="cursor-pointer">
             <div class="flex items-center gap-2">
               <span class="text-[14px]">Hello, Sign in <b class="text-[16px]">Account & Lists</b></span>
             </div>

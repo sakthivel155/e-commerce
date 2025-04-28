@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { NgxMasonryModule } from 'ngx-masonry';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthFormComponent } from '../features/auth/auth-form/auth-form.component';
 
 @NgModule({
-  imports: [NgxMasonryModule],
-  exports: [NgxMasonryModule],
+  declarations: [],
+  imports: [ReactiveFormsModule, CommonModule, AuthFormComponent],
+  exports: [],
 })
 export class SharedModule {}
