@@ -1,0 +1,30 @@
+/* In your component's CSS file (e.g., component.scss) */
+#masonryGrid {
+    display: block; /* Reset to block to allow custom positioning */
+    column-gap: 20px; /* Match gap-5 */
+    column-count: 1; /* Base column count, adjusted by JS */
+  }
+  
+  .masonry-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px; /* Match gap-5 */
+  }
+  
+  @media (min-width: 640px) {
+    #masonryGrid {
+      column-count: 2;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #masonryGrid {
+      column-count: 3;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    #masonryGrid {
+      column-count: 4;
+    }
+  }

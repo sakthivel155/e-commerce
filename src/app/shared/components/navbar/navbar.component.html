@@ -1,0 +1,39 @@
+<div class="flex items-center border-b justify-between px-12 py-5 bg-[#131921]">
+   <div class="flex items-center w-full gap-10">
+       <img class="w-25 object-cover cursor-pointer" src='assets/images/logos/amazon_logo.png' alt="brand-logo">
+       <div class="flex gap-2 w-[50%] h-10 outline rounded  bg-white">
+           <label for="search"></label>
+           <input type="text" class="w-full outline-none px-2 placeholder:opacity-60" id="search" placeholder="Search a product">
+           <button class="bg-[#f3a847] w-[60px] rounded-r py-2 cursor-pointer"><mat-icon>search</mat-icon></button>
+       </div>
+   </div> 
+    <nav>
+        <ul class="flex items-center gap-10 text-white">
+            <li routerLink="/" class="cursor-pointer">
+              <mat-icon>home</mat-icon>
+            </li>
+            <li routerLink="/favorite" class="cursor-pointer">
+              <mat-icon>favorite</mat-icon>
+            </li>
+            <li routerLink="/carts" class="relative w-16  cursor-pointer">
+              <div class="relative">
+                <img
+                  class="w-full h-auto"
+                  src="../../../../assets/icons/cart.png"
+                  alt="Cart icon"
+                />
+                <span
+                  class="absolute top-1/4 left-[24px] -translate-x-1/2 -translate-y-1/2 font-semibold text-[#f08804] text-xs md:text-sm lg:text-base"
+                >
+                  0
+                </span>
+              </div>
+            </li>
+          <li routerLink="/signin" class="cursor-pointer">
+            <div class="flex items-center gap-2">
+              <span class="text-[14px]">Hello, Sign in <b class="text-[16px]">Account & Lists</b></span>
+            </div>
+          </li>
+          </ul>
+    </nav>
+</div>

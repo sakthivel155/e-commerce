@@ -1,3 +1,12 @@
 @import "tailwindcss";
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: "Amazon Ember";
+    src: url('../src/assets/fonts/Amazon_Typefaces_Complete_Font_Set_Mar2020/Ember/AmazonEmber_Rg.ttf');
+    font-display: swap;
+}
+body { 
+    background-color: #e3e6e6;
+    margin: 0; 
+    font-family: Amazon Ember, "Helvetica Neue", sans-serif;
+ }

@@ -1,0 +1,5 @@
+<div class="grid gap-5 w-[88%] mx-auto my-10 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] ">
+  @for (productcard of productsCards; track productcard.id) {
+    <app-product [product]="productcard"></app-product>
+  }
+</div>
